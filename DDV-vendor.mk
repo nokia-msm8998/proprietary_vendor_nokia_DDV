@@ -69,14 +69,11 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/DDV/proprietary/vendor/etc/firmware/hx_criteria.csv:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/hx_criteria.csv \
     vendor/nokia/DDV/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/nokia/DDV/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
-    vendor/nokia/DDV/proprietary/vendor/etc/init/init_qfp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_qfp_daemon.rc \
-    vendor/nokia/DDV/proprietary/vendor/etc/init/vendor.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.fingerprint.rc \
     vendor/nokia/DDV/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/nokia/DDV/proprietary/vendor/etc/init/vendor.sw.swfingerprint@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sw.swfingerprint@1.0-service.rc \
     vendor/nokia/DDV/proprietary/vendor/etc/init/vendor.trustonic.tee@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.0-service.rc \
     vendor/nokia/DDV/proprietary/vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.teeregistry@1.0-service.rc \
     vendor/nokia/DDV/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
-    vendor/nokia/DDV/proprietary/vendor/etc/permissions/qti_fingerprint_interface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_fingerprint_interface.xml \
     vendor/nokia/DDV/proprietary/vendor/etc/public.libraries-trustonic.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries-trustonic.txt \
     vendor/nokia/DDV/proprietary/vendor/etc/sec_s3nrn82_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn82_rfreg.bin \
     vendor/nokia/DDV/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
@@ -146,7 +143,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/DDV/proprietary/vendor/firmware/tbase.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/tbase.mdt
 
 PRODUCT_PACKAGES += \
-    swfingerprint.default \
     libMcClient \
     libarcsoft_beautyshot \
     libcapiv2svacnn \
@@ -167,7 +163,6 @@ PRODUCT_PACKAGES += \
     libsensor1 \
     libsensor_reg \
     libssc_default_listener \
-    libvideoutils \
     nfc_nci_sec \
     sensor_calibrate \
     sensors.ssc \
@@ -682,6 +677,7 @@ PRODUCT_PACKAGES += \
     libchromatix_gc5035_video_full \
     libchromatix_gc5035_zsl_preview \
     libchromatix_gc5035_zsl_video \
+    libcvimage_api \
     libdepthmapwrapper \
     libflash_pmic \
     libhal_dbg \
@@ -803,19 +799,23 @@ PRODUCT_PACKAGES += \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
     libvidhance \
-    vendor.qti.hardware.fingerprint@1.0 \
+    libwa_widelens_undistort \
     android.hardware.gatekeeper@1.0-impl-qti \
-    cdfinger.fingerprint.default \
+    cdfinger.fingerprint.sdm660 \
+    swfingerprint.sdm660 \
     vendor.qti.hardware.soter@1.0-impl \
     libirisService \
     libiris_ioctl_wrapper \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
-    libqfp-service \
+    libpwirisPCS \
+    libpwirispq \
+    libqcbor \
     libqtikeymaster4 \
     libremosaiclib \
     libsensorndkbridge \
+    vendor.pixelworks.hardware.display@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
@@ -833,7 +833,6 @@ PRODUCT_PACKAGES += \
     libseemore_hexagon_skel \
     libvpp_svc_skel \
     vendor.qti.hardware.soter-V1.0-java \
-    fingerprint \
     android.hardware.gatekeeper@1.0-service-qti \
     android.hardware.keymaster@4.0-service-qti \
     vendor.qti.hardware.soter@1.0-service \
@@ -846,7 +845,6 @@ PRODUCT_PACKAGES += \
     mm-qjpeg-enc-test \
     mm-qomx-idec-test \
     mm-qomx-ienc-test \
-    qfp-daemon \
     remosaic_daemon \
     sensors.qti \
     vendor.qti.hardware.soter@1.0-provision
