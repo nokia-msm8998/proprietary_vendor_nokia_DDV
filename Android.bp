@@ -963,7 +963,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.sw.swfingerprint@1.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
@@ -980,7 +980,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.sw.swfingerprint@1.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libhwbinder",
                 "liblog",
