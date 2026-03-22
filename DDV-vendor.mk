@@ -116,26 +116,11 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/DDV/proprietary/vendor/firmware/tbase.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/tbase.mdt
 
 PRODUCT_PACKAGES += \
-    libarcsoft_beautyshot \
-    libcapiv2svacnn \
-    libcapiv2vop \
     libirisService \
     libiris_ioctl_wrapper \
-    libmmcamera2_frame_algorithm \
-    libmmcamera2_is \
-    libmmcamera2_q3a_core \
-    libmmcamera2_stats_algorithm \
-    libmmcamera2_stats_lib \
-    libmmcamera_dbg \
-    libmmcamera_faceproc \
-    libmmcamera_faceproc2 \
-    libmmcamera_tintless_algo \
-    libmmcamera_tintless_bg_pca_algo \
-    libmpbase \
     libpwirisPCS \
     libpwirispq \
     libremosaic_daemon \
-    libseemore \
     libsensor1 \
     libsensor_reg \
     libssc_default_listener \
@@ -148,13 +133,12 @@ PRODUCT_PACKAGES += \
     libacdbrtac \
     libactuator_daredevil_s5kgm1sp_back_tly_ii_gt9767 \
     libactuator_daredevil_s5kgm1sp_back_tsp_i_gt9767 \
-    libactuator_starlord_s5k3p9sx_back_hlt_ii_gt9767 \
-    libactuator_starlord_s5k3p9sx_back_txd_i_gt9767 \
     libadiertac \
     libadm \
     libadsp_hvx_callback_skel \
     libadsp_hvx_stub \
     libaoa \
+    libarcsoft_beautyshot \
     libarcsoft_bokehplus_image \
     libarcsoft_bokehplus_video \
     libarcsoft_dro \
@@ -620,32 +604,6 @@ PRODUCT_PACKAGES += \
     libchromatix_daredevil_s5kgm1sp_back_tsp_i_zsl_preview_3a_its \
     libchromatix_daredevil_s5kgm1sp_back_tsp_i_zsl_preview_3a_sn \
     libchromatix_daredevil_s5kgm1sp_back_tsp_i_zsl_video_3a \
-    libchromatix_gc5035_a3_default_preview \
-    libchromatix_gc5035_a3_default_video \
-    libchromatix_gc5035_a3_hfr_120 \
-    libchromatix_gc5035_a3_hfr_60 \
-    libchromatix_gc5035_a3_hfr_90 \
-    libchromatix_gc5035_common \
-    libchromatix_gc5035_cpp_ds_chromatix \
-    libchromatix_gc5035_cpp_hfr_120 \
-    libchromatix_gc5035_cpp_hfr_60 \
-    libchromatix_gc5035_cpp_hfr_90 \
-    libchromatix_gc5035_cpp_liveshot \
-    libchromatix_gc5035_cpp_preview \
-    libchromatix_gc5035_cpp_snapshot \
-    libchromatix_gc5035_cpp_us_chromatix \
-    libchromatix_gc5035_cpp_video \
-    libchromatix_gc5035_cpp_video_full \
-    libchromatix_gc5035_default_video \
-    libchromatix_gc5035_hfr_120 \
-    libchromatix_gc5035_hfr_60 \
-    libchromatix_gc5035_hfr_90 \
-    libchromatix_gc5035_postproc \
-    libchromatix_gc5035_preview \
-    libchromatix_gc5035_snapshot \
-    libchromatix_gc5035_video_full \
-    libchromatix_gc5035_zsl_preview \
-    libchromatix_gc5035_zsl_video \
     libcvimage_api \
     libdepthmapwrapper \
     libflash_pmic \
@@ -656,14 +614,19 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
+    libmmcamera2_frame_algorithm \
     libmmcamera2_iface_modules \
     libmmcamera2_imglib_modules \
+    libmmcamera2_is \
     libmmcamera2_isp_modules \
     libmmcamera2_mct \
     libmmcamera2_mct_shimlayer \
     libmmcamera2_pp_buf_mgr \
     libmmcamera2_pproc_modules \
+    libmmcamera2_q3a_core \
     libmmcamera2_sensor_modules \
+    libmmcamera2_stats_algorithm \
+    libmmcamera2_stats_lib \
     libmmcamera2_stats_modules \
     libmmcamera_arcrtb \
     libmmcamera_csidtg \
@@ -685,12 +648,15 @@ PRODUCT_PACKAGES += \
     libmmcamera_daredevil_s5kgm1sp_back_tly_ii_eeprom \
     libmmcamera_daredevil_s5kgm1sp_back_tsp_i \
     libmmcamera_daredevil_s5kgm1sp_back_tsp_i_eeprom \
+    libmmcamera_dbg \
     libmmcamera_depth_map \
     libmmcamera_dummyalgo \
     libmmcamera_eebinparse \
     libmmcamera_eeprom_util \
     libmmcamera_eztune_module \
     libmmcamera_facedetection_lib \
+    libmmcamera_faceproc \
+    libmmcamera_faceproc2 \
     libmmcamera_hdr_gb_lib \
     libmmcamera_hvx_add_constant \
     libmmcamera_hvx_grid_sum \
@@ -741,18 +707,18 @@ PRODUCT_PACKAGES += \
     libmmcamera_isp_sce40 \
     libmmcamera_isp_snr47 \
     libmmcamera_isp_sub_module \
-    libmmcamera_le2464c_eeprom \
     libmmcamera_paaf_lib \
     libmmcamera_pdaf \
     libmmcamera_pdafcamif \
     libmmcamera_ppbase_module \
     libmmcamera_ppeiscore \
     libmmcamera_quadracfa \
-    libmmcamera_rohm_brcg064gwz_3_eeprom \
     libmmcamera_sat_test_lib \
     libmmcamera_stillmore_lib \
     libmmcamera_sw2d_lib \
     libmmcamera_thread_services \
+    libmmcamera_tintless_algo \
+    libmmcamera_tintless_bg_pca_algo \
     libmmcamera_tuning \
     libmmcamera_tuning_lookup \
     libmmjpeg \
@@ -760,17 +726,18 @@ PRODUCT_PACKAGES += \
     libmmlib2d_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
+    libmpbase \
     libois_bu63165 \
     libois_lc898122 \
     libqomx_core \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
+    libseemore \
     libvidhance \
     libwa_widelens_undistort \
     fingerprint.sdm660 \
     libMcClient \
-    libremosaiclib \
     libsensorndkbridge \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \

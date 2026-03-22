@@ -1,7 +1,7 @@
 
 
 <!--
-  Copyright (c) 2016-2020 Qualcomm Technologies, Inc.
+  Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -163,6 +163,7 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.14</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+
   <CameraModuleConfig>
     <CameraId>0</CameraId>
     <SensorName>starlord_s5k3p9sx_back_hlt_ii</SensorName>
@@ -409,6 +410,7 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+
   <!-- Uncomment below node to enable iris camera sensor
   TODO: Need to add support for front_aux sensors
   <CameraModuleConfig>
@@ -434,6 +436,7 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig> -->
+
   <CameraModuleConfig>
     <CameraId>3</CameraId>
     <SensorName>daredevil_hi846_wide_txd_i</SensorName>
